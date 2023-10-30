@@ -51,7 +51,7 @@ provide an appropriate schema that has a number of json objects equal to the num
 and in each json object there should be keys and values, each key is an element of the list of important information for the user\
  and the values for those keys should be the information from the scrapped website with the actual link where the information can be found if the website has a link about such information\
  The main users: {main_users} \
-The list of important information:{my_list} \                                                
+The list of important information:{my_list} \
 The scrapped website :{text}""")
 # Generate the response
 completion = palm.generate_text(temperature=0.0,model=model, prompt=prompt)
